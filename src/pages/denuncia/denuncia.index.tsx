@@ -1,8 +1,43 @@
 
 import Header from '../../components/Header/header'
 import  './denuncia.css'
+import { useEffect,useState,useRef } from 'react'
+import api from '../../service/api'
+
 
 function Denuncia(){
+    // const  [denuncias,setUsers] = useState([])
+    // const inputName = useRef();
+    // const inputEmail = useRef();
+    // const inputAddress = useRef();
+
+
+    async function getUsers() {
+        // const denunciaFromApi = await api.get('/denuncias');
+        // setUsers(denunciaFromApi.data)
+        
+       }
+       async function createUser() {
+        await api.post('/denuncias',{
+        //   email:inputEmail.current.value,
+        //   name:inputName.current.value,
+        //   address:inputAddress.current.value
+        });
+        getUsers();
+       }
+      useEffect(()=>{
+        getUsers();
+    
+      },[])
+    
+    //   async function DeleteUsers(id) {
+    //     await api.delete(`//${id}`);
+    //     getUsers();
+        
+    //    }
+         
+     
+
 
     return(
        
