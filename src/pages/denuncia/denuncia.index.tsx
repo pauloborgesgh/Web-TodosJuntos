@@ -1,10 +1,13 @@
 
+import Header from '../../components/Header/header'
 import  './denuncia.css'
 
 function Denuncia(){
 
     return(
-        <div>
+       
+        <div> 
+            <Header/>
         <form className="form" action="e" method="post">
       
         <div className="input-box">

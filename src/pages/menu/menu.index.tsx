@@ -1,12 +1,12 @@
 
-
+import Header from '../../components/Header/header'
+import  './menu.css'
 function Menu(){
 
     return(
        
-
-        <h1>Menu</h1>
-
+        <Header/>
+   
     )
 }
 

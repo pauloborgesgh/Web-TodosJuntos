@@ -3,14 +3,14 @@ import  './home.css'
 
 
 
-function Home(){
+function HomeLogin(){
     return(
         <section className="boxLogin container">
         <div className="content">
       
       <form className="login" method="post" name="login">
 
-        <h1><i className="icon icon-key-1"></i> Login</h1>
+        <h1><i ></i> Login</h1>
 
         <div className="padding">
 
@@ -40,4 +40,4 @@ function Home(){
     )
 }
 
-export default Home
+export default HomeLogin
